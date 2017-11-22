@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>预约到店</title>
+	<meta name="viewport" content="initial-scale=1,maximum-scale=1,user-scalable=no,width=device-width,minimal-ui">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta content="telephone=no" name="format-detection">
+	<meta http-equiv="pragma" content="no-cache">
+	<meta http-equiv="cache-control" content="no-cache">
+	<meta http-equiv="expires" content="0">
+	<link href="../css/app.css" rel="stylesheet">
+	<link rel="stylesheet" href="../css/car_list.css">
+</head>
+<body style="background: rgb(247, 247, 247);">
+<div id="app">
+	<div class="pg-order-appointment-store">
+		<div class="co-header2-back"><i class="back" onclick="window.history.go(-1)"></i>填写订单</div>
+		<div class="car-info flex">
+			<div class="car-img"><img src="../images/car/car4.jpg"></div>
+			<div class="flex-1 car-name">
+				<div style="font-size: 18px;">荣威RX5</div>
+				<div style="margin: 10px 0;">2018款 两厢 BootEs 125</div>
+				<div>
+					<span>厂家指导价 : <span>20万</span></span>&nbsp;&nbsp;&nbsp;&nbsp;
+					<span>颜色 : </span><span style="display: inline-block; width: 12px;height: 12px;background-color: red;"></span>
+				</div>
+			</div>
+		</div>
+		<div class="appointment-info-wrapper">
+			<div class="appointment-info fs-16">
+				<div class="form-row flex border-bottom">
+					<div class="form-title">姓名</div>
+					<div class="form-input flex-1"><input type="text" placeholder="请输入"></div>
+					<div class="gender-radio">
+						<input type="radio" id="man" value="0" class="g-radio on">
+						<label for="man" class="man-label">先生</label>
+						<input type="radio" id="woman" value="1" class="g-radio">
+						<label for="woman">女士</label>
+					</div>
+				</div>
+				<div class="form-row border-bottom">
+					<div class="form-title">手机号</div>
+					<div class="form-input"><input type="tel" placeholder="请输入"></div>
+				</div>
+				<div class="form-row border-bottom">
+					<div class="form-title">业务员</div>
+					<div class="form-input"><input type="tel" placeholder="请输入业务员的姓名或电话号码"></div>
+				</div>
+				<div class="form-row flex store">
+					<div class="form-title">预约地区</div>
+					<div class="flex-1 placeholder">请选择</div>
+					<img src="../images/car/dirright.png" alt="" height="18" class="right-ico">
+				</div>
+			</div>
+		</div>
+		<div class="comfirm-btn fs-18 text-center none-select" style="color: #fff; font-weight: bold;">确认预约</div>
+	</div>
+</div>
+
+</body>
+</html>

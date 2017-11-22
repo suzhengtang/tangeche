@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>弹个车</title>
+	<meta name="viewport" content="initial-scale=1,maximum-scale=1,user-scalable=no,width=device-width,minimal-ui">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta content="telephone=no" name="format-detection">
+	<meta http-equiv="pragma" content="no-cache">
+	<meta http-equiv="cache-control" content="no-cache">
+	<meta http-equiv="expires" content="0">
+	<link rel="shortcut icon" href="" type="image/x-icon">
+	<link href="./css/app.css" rel="stylesheet">
+	<link rel="stylesheet" href="./css/index.css">
+	<link rel="stylesheet" href="css/LArea.css">
+
+</head>
+
+<body style="background: rgb(255, 255, 255);">
+<div id="app">
+	<div>
+		<div class="co-list-head">
+			<div class="header1-nav flex">
+				<div class="area-select" id="city">
+					<!--<span>全国</span>-->
+					<input id="demo1" type="text" value="全国" readonly style="width: 40px;">
+					<input id="value1" type="hidden" value="20,234,501"/>
+					<img src="images/car/down.png" alt="" width="12">
+				</div>
+				<div class="search-div flex-1">
+					<div class="co-list-search search-page">
+						<div class="search-header">
+							<div class="flex search-wrapper">
+								<div class="form-wrapper">
+									<form action="" class="search-input flex flex-1" id="bay_car">
+										<input type="text" placeholder="" autocomplete="off">
+										<div class="fake-placeholder flex">
+											<img src="images/car/search.png" alt="">想买什么车？
+										</div>
+									</form>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="co-menu side-menu">
+					<div class="menu-div"></div>
+				</div>
+			</div>
+		</div>
+		<div class="pg-car-list">
+			<div class="condition-warpper">
+				<div class="filter-box flex">
+					<div class="filter-item" id="default">
+						<span>默认排序</span>
+						<img src="images/car/dir.png" id="img_default" width="8" height="4">
+						<img src="images/car/dirtopred.png" id="img_default_red" width="8" height="4" style="display: none;">
+					</div>
+					<div class="filter-item" id="brand">
+						<span>品牌</span>
+						<img src="images/car/dir.png" width="8" height="4">
+					</div>
+					<div class="filter-item" id="first">
+						<span>首付</span>
+						<img src="images/car/dir.png" id="img_first" width="8" height="4">
+						<img src="images/car/dirtopred.png" id="img_first_red" width="8" height="4" style="display: none;">
+					</div>
+					<div class="over-hidden" id="default_show" style="display: none;">
+						<ul class="orderBy">
+							<li class="flex actived">默认排序<img src="images/car/checked.png"></li>
+							<li class="flex">首付最低<img src="images/car/checked.png"></li>
+							<li class="flex">首付最高<img src="images/car/checked.png"></li>
+						</ul>
+					</div>
+					<div class="over-hidden" id="first_show" style="display: none;">
+						<div class="prepaidAmount">
+							<a class="actived">全部</a>
+							<a class="">1万以内</a>
+							<a class="">1-2万</a>
+							<a class="">2-3万</a>
+							<a class="">3-4万</a>
+							<a class="">4-5万</a>
+							<a class="">5万以上</a>
+						</div>
+					</div>
+					<div class="hidden-div" style="height: 0px; display: none;"></div>
+				</div>
+				<div class="list-content">
+					<!--<div class="top-tip" style="display: none;"> 为您找到82款新车</div>-->
+					<a href="html/details.html" class="" target="_self">
+						<div class="car-item flex">
+							<div class="car-img">
+								<img width="100%" height="100%" alt="2017款  L 2.5L 精英版" class="oss-image" src="images/car/car4.jpg" lazy="loaded">
+							</div>
+							<div class="car-info flex-1">
+								<div class="title fs-16"><span>英菲尼迪Q70</span></div>
+								<div class="model-name fs-12">2017款 L 2.5L 精英版</div>
+								<div class="text-gray2 fs-12">厂商指导价：39.98万</div>
+								<div class="text-primary fs-12 price">首付&nbsp;<span class="fs-18">3.99万</span>月供&nbsp;8398元</div>
+							</div>
+						</div>
+					</a>
+					<a href="html/details.html" class="" target="_self">
+						<div class="car-item flex">
+							<div class="car-img">
+								<img width="100%" height="100%" alt="2018款  30T 两驱自动互联网智享版" class="oss-image" src="images/car/car5.jpg" lazy="loaded">
+							</div>
+							<div class="car-info flex-1">
+								<div class="title fs-16"><span>荣威RX5</span></div>
+								<div class="model-name fs-12">2018款 30T 两驱自动互联网智享版</div>
+								<div class="text-gray2 fs-12">厂商指导价：16.68万</div>
+								<div class="text-primary fs-12 price">首付&nbsp;<span class="fs-18">1.66万</span>月供&nbsp;3998元</div>
+							</div>
+						</div>
+					</a>
+					<a href="html/details.html" class="" target="_self">
+						<div class="car-item flex">
+							<div class="car-img">
+								<img width="100%" height="100%" alt="2016款  20T 两驱自动旗舰版" class="oss-image" src="images/car/car4.jpg" lazy="loaded">
+							</div>
+							<div class="car-info flex-1">
+								<div class="title fs-16"><span>荣威RX5</span></div>
+								<div class="model-name fs-12">2016款 20T 两驱自动旗舰版</div>
+								<div class="text-gray2 fs-12">厂商指导价：13.88万</div>
+								<div class="text-primary fs-12 price">首付&nbsp;<span class="fs-18">1.38万</span>月供&nbsp;3298元</div>
+							</div>
+						</div>
+					</a>
+					<a href="html/details.html" class="" target="_self">
+						<div class="car-item flex">
+							<div class="car-img">
+								<img width="100%" height="100%" alt="2018款  20T 自动尊享互联网版" class="oss-image" src="images/car/car5.jpg" lazy="loaded">
+							</div>
+							<div class="car-info flex-1">
+								<div class="title fs-16"><span>MG6</span></div>
+								<div class="model-name fs-12">2018款 20T 自动尊享互联网版</div>
+								<div class="text-gray2 fs-12">厂商指导价：12.58万</div>
+								<div class="text-primary fs-12 price">首付&nbsp;<span class="fs-18">1.25万</span>月供&nbsp;4998元</div>
+							</div>
+						</div>
+					</a>
+					<a href="html/details.html" class="" target="_self">
+						<div class="car-item flex">
+							<div class="car-img">
+								<img width="100%" height="100%" alt="2014款    1.6L 自动潮流版" class="oss-image" src="images/car/car4.jpg" lazy="loaded"> <!---->
+							</div>
+							<div class="car-info flex-1">
+								<div class="title fs-16"><span>标致2008</span> <!--<span class="promotionTag">免首付</span>-->  </div>
+								<div class="model-name fs-12">2014款 1.6L 自动潮流版</div>
+								<div class="text-gray2 fs-12">厂商指导价：10.97万</div>
+								<div class="text-primary fs-12 price">首付&nbsp;<span class="fs-18">1.09万</span>月供&nbsp;2298元</div>
+							</div>
+						</div>
+					</a>
+					<a href="html/details.html" class="" target="_self">
+						<div class="car-item flex">
+							<div class="car-img">
+								<img width="100%" height="100%" alt="2015款1.6L  自动玩酷智行版" class="oss-image" src="images/car/car5.jpg" lazy="loaded">
+							</div>
+							<div class="car-info flex-1">
+								<div class="title fs-16"><span>标致2008</span></div>
+								<div class="model-name fs-12">2015款1.6L 自动玩酷智行版</div>
+								<div class="text-gray2 fs-12">厂商指导价：11.82万</div>
+								<div class="text-primary fs-12 price">首付&nbsp;<span class="fs-18">1.18万</span>月供&nbsp;1798元</div>
+							</div>
+						</div>
+					</a>
+					<a href="html/details.html" class="" target="_self">
+						<div class="car-item flex">
+							<div class="car-img">
+								<img width="100%" height="100%" alt="2016款  EcoBoost 330 V6四驱运动型" class="oss-image" src="images/car/car5.jpg" lazy="loading">
+							</div>
+							<div class="car-info flex-1">
+								<div class="title fs-16"><span>福特锐界</span></div>
+								<div class="model-name fs-12">2016款 EcoBoost 330 V6四驱运动型</div>
+								<div class="text-gray2 fs-12">厂商指导价：41.18万</div>
+								<div class="text-primary fs-12 price">首付&nbsp;<span class="fs-18">4.11万</span>月供&nbsp;5998元</div>
+							</div>
+						</div>
+					</a>
+					<a href="html/details.html" class="" target="_self">
+						<div class="car-item flex">
+							<div class="car-img">
+								<img width="100%" height="100%" alt="2018款  EcoBoost 245 两驱豪锐型 7座" class="oss-image" src="images/car/logo.png" lazy="loading">
+								<!--<img src="images/car/new.png" class="flag-img">-->
+							</div>
+							<div class="car-info flex-1">
+								<div class="title fs-16"><span>福特锐界</span></div>
+								<div class="model-name fs-12">2018款 EcoBoost 245 两驱豪锐型 7座</div>
+								<div class="text-gray2 fs-12">厂商指导价：29.98万</div>
+								<div class="text-primary fs-12 price">首付&nbsp;<span class="fs-18">2.99万</span>月供&nbsp;5498元</div>
+							</div>
+						</div>
+					</a>
+				</div>
+			</div>
+		</div>
+		<div class="tabbar">
+			<ul>
+				<li class="current"><a href="#">
+					<img src="images/car/homered.png" alt="" width="36">
+					<p style="color: #ffba35;">选车</p>
+				</a></li>
+				<li><a href="html/me.html">
+					<img src="images/car/me.png" alt="">
+					<p>我的</p>
+				</a></li>
+			</ul>
+		</div>
+	</div>
+</div>
+
+<script src="lib/jquery.min.js"></script>
+<script src="js/city/LArea.js"></script>
+<script src="js/city/LAreaData1.js"></script>
+<script src="js/city/LAreaData2.js"></script>
+<script src="js/index.js"></script>
+<script>
+	var area1 = new LArea();
+	area1.init({
+		'trigger': '#demo1', //触发选择控件的文本框，同时选择完毕后name属性输出到该位置
+		'valueTo': '#value1', //选择完毕后id属性输出到该位置
+		'keys': {
+			id: 'id',
+			name: 'name'
+		}, //绑定数据源相关字段 id对应valueTo的value属性输出 name对应trigger的value属性输出
+		'type': 1, //数据源类型
+		'data': LAreaData //数据源
+	});
+	area1.value=[1,13,0];//控制初始位置，注意：该方法并不会影响到input的value
+	var area2 = new LArea();
+	area2.init({
+		'trigger': '#demo2',
+		'valueTo': '#value2',
+		'keys': {
+			id: 'value',
+			name: 'text'
+		},
+		'type': 2,
+		'data': [provs_data, citys_data, dists_data]
+	});
+</script>
+</body>
+</html>
